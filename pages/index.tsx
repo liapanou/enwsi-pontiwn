@@ -52,8 +52,11 @@ function Page() {
           </div>
 
           <div className="grid gap-2 h-[87vh]  overflow-y-auto grid-cols-6">
-            {[].map((a) => (
-              <div className="bg-slate-600 border hover:border-amber-400 cursor-pointer h-full w-full">
+            {[].map((a, idx) => (
+              <div
+                key={idx}
+                className="bg-slate-600 border hover:border-amber-400 cursor-pointer h-full w-full"
+              >
                 <img className="w-full h-40 " alt="" />
               </div>
             ))}
